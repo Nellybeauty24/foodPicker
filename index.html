@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="div1" id="home">
+
+      <div class="div3">
+        <img src="images/home.png" alt="image" style="width: 50px; height:50px">
+        <h1>Food Picker</h1>
+      </div>
+
+      <h2>Hungry? Let's help you decide!</h2>
+
+      <div class="div4">
+        <h3>What meal are you chosing?</h3>
+        <label>
+          <input type="checkbox" hidden id="breakfast" value="breakfast">
+          <div class="div5">
+            <img src="images/breakfast.png" alt="image" style="width: 50px; height:50px  ;margin-right :30px" >
+            <h1>Breakfast</h1>
+          </div>
+
+        </label>
+
+        <label>
+          <input type="checkbox" hidden id="lunch" value="lunch">
+          <div  class="div5">
+            <img src="images/lunch.png" alt="image" style="width: 50px; height:50px ;margin-right :30px " >
+            <h1>Lunch</h1>
+          </div>
+
+        </label>
+
+        <label>
+          <input type="checkbox" hidden id="dinner" value="dinner">
+          <div class="div5">
+            <img src="images/dinner.png" alt="image" style="width: 50px; height:50px; margin-right :30px " >
+           <h1>Dinner</h1>
+          </div>
+         </label>
+      </div>
+      <button class="myButton" onclick="pickmeal()">Pick</button>
+
+    </div>
+<!-- div2 -->
+    <div class="div2" style="display: none"; id="result">
+
+      <h2 id="result-heading">Here's your lunch suggestion!</h2>
+
+      <img src="images/lunchsug.gif" alt="image" style="height: 350px; width: 700px" id="result-img">
+
+      <div class="div6">
+        <h1 id="food-meal">JOLLOF RICE</h1>
+        <h3 id="food-reason">A classic Nigerian favourite, spicy and satisfying.</h3>
+      </div>
+      <div class="myButton1">
+        <button class="button" onclick="pickmeal()">Pick Again</button>
+        <button class="button" id="button2" onclick="home()">Go back</button>
+      </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
